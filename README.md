@@ -1,4 +1,4 @@
-# Membuat WebGIS sederhana
+# WebGIS
 
 One Paragraph of project description goes here
 
@@ -31,10 +31,6 @@ until finished
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
-
-
-```
-
 
 
 ## Deployment
