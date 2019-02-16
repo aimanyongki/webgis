@@ -40,5 +40,7 @@ Pada kesempatan ini akan dibahas cara untuk menampilkan shape file dari peta ind
 
 Pada browser buka `http://localhost:8080/geoserver/web/`
 
+Selanjutnya di dalam folder tex terdapat file pdf mengenai cara menampilkan peta berformat shapefile pada web.
+
 ### Tampilan Hasil
 ![hasil](https://github.com/aimanyongki/webgis/blob/master/hasil.png?raw=true)
