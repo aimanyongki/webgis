@@ -39,3 +39,6 @@ Pada kesempatan ini akan dibahas cara untuk menampilkan shape file dari peta ind
  - `sudo ./bin/startup.sh`
 
 Pada browser buka `http://localhost:8080/geoserver/web/`
+
+### Tampilan Hasil
+![hasil](https://github.com/aimanyongki/webgis/blob/master/hasil.png?raw=true)
