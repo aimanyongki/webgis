@@ -1,18 +1,61 @@
 \documentclass[12pt]{report}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{amsmath,bm}
+\usepackage{verbatim}
 \usepackage[english]{babel}
 
 \begin{document}
 \pagenumbering{arabic}
 
 \newpage
-\chapter*{WebGIS sederhana}
-Pada kesempatan ini saya akan berbagi mengenai cara menginstall Geoserver untuk keperluan Web Mapping.
 
-\section*{Geoserver}
-Geoserver merupakan server open source yang biasa digunakan untuk sharing geospatial data. 
+\chapter*{Web mapping sederhana}
+Setelah mengetahui cara menginstall GeoServer yang telah dijelaskan pada bagian \texttt{README.md}, pada penjelasan ini akan dibahas mengenai penggunaan GeoServer untuk menampilkan shape file.   
 
+\section*{Creating a new workspace}
+Setelah berhasil membuka \texttt{http://localhost:8080/geoserver/web/}, tahapan selanjutnya adalah \newline
 
+1. Download shape file pada laman ini \url{https://data.biogeo.ucdavis.edu/data/diva/adm/IDN_adm.zip}. \\
+
+2. Ekstrak data dan pindahkan semua data ke folder \url{GEOSERVER_DATA_DIR/data/}. \\
+
+3. Pada panel data sebelah kiri pilih Workspace dan kemudian \textbf{Add new workspace}. \\
+
+4. Masukkan misalnya Nama = \texttt{shpindo}  dan Nama URI = \url{http://geoserver.org/shpindo}. \\
+
+5. Klik \textbf{Submit}. Workspace \texttt{shpindo} telah ditambahkan ke daftar Workspace. \\
+
+\section*{Creating a store}
+Store akan membuat GeoServer mengetahui bagaimana untuk terhubung dengan shapefile.\newline 
+
+1. Pada panel \textbf{Data} pilih \textbf{Stores}.\\
+
+2. Add \textbf{new Store} kemudian pilih Shapefile.\\
+
+3. Tambahkan informasi yang sesuai dengan data yang kita masukkan.\\
+
+4. Pada \textbf{Connection Parameters}, pilih lokasi dari shapefile.\\
+
+5. Klik \textbf{Save}.
+
+\section*{Creating a layer} 
+1. Pada laman \textbf{New Layer}, klik \textbf{Publish}. \\
+
+2. Masukkan informasi yang sesuai yang mendefinisikan Layer.\\
+
+3. Untuk menghasilkan bounding boxes dari layer, pilih \textbf{Compute from data} dan kemudian \textbf{Compute from native bounds}.\\
+
+4. Klik \textbf{Publishing} tab.\\
+
+5. Set layer style. Pada WMS Settings, pastikan \textbf{Default Style} pada pilihan Line.\\
+
+6. Save 
+
+\section*{Previewing the layer}
+1. Pada \textbf{Layer Preview}, klik \textbf{OpenLayers} yang tertulis pada tab \textbf{Common Formats}.\\
+
+2. Peta \textbf{OpenLayers} akan ditampilkan pada tab baru dari browser.
+- Peta OpenLayers akan ditampilkan pada tab baru dari browser.  
 
 \end{document}
