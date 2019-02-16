@@ -14,34 +14,34 @@ WMS merupakan protokol standar yang dikembangkan oleh Open Geospatial Consortium
 # Tutorial penggunaan GeoServer untuk web mapping
 Pada kesempatan ini akan dibahas cara untuk menampilkan shape file dari peta indonesia pada web. Untuk melakukannya setidaknya dibutuhkan:
 
-Setting up GeoServer
-- Download dan install OpenJDK
- - sudo apt-get install openjdk-8-jre
+## Setting up GeoServer
+### Download dan install OpenJDK
+ - `sudo apt-get install openjdk-8-jre`
 
-- Download dan install Apache2
- - sudo apt-get install apache2
+### Download dan install Apache2
+ - `sudo apt-get install apache2`
 
-- GeoServer, versi yang digunakan pada tutorial ini adalah versi 2.14.2
- - Unduh pada laman http://geoserver.org/release/stable/ .
+### GeoServer, versi yang digunakan pada tutorial ini adalah versi 2.14.2
+ - Unduh pada laman [ini](http://geoserver.org/release/stable/).
  - Pilih Platform Independent Binary
- - sudo apt install unzip
- - mkdir -p /var/www/geoserver
- - cd /var/www/geoserver
- - pindahkan file yang telah didownload ke folder /var/www/geoserver
- - unzip geoserver-2.14.2-bin.zip
- - mv geoserver-2.14.2/* .
- - echo "export GEOSERVER_HOME=/var/www/geoserver" >> ~/.profile
- - . ~/.profile
+ - `sudo apt install unzip`
+ - `mkdir -p /var/www/geoserver`
+ - `cd /var/www/geoserver`
+ - pindahkan file yang telah didownload ke folder `/var/www/geoserver`
+ - `unzip geoserver-2.14.2-bin.zip`
+ - `mv geoserver-2.14.2/* .`
+ - `echo "export GEOSERVER_HOME=/var/www/geoserver" >> ~/.profile`
+ - `. ~/.profile`
 
-- Running
- - JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
- - sudo /etc/init.d/apache2 restart 
- - sudo ./bin/startup.sh
+### Running
+ - `JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"`
+ - `sudo /etc/init.d/apache2 start` 
+ - `sudo ./bin/startup.sh`
 
-In the browser open http://localhost:8080/geoserver/web/
+In the browser open `http://localhost:8080/geoserver/web/`
 
 ## Getting Started
-- Download shape file on https://data.biogeo.ucdavis.edu/data/diva/adm/IDN_adm.zip
+- Download shape file pada laman [ini](https://data.biogeo.ucdavis.edu/data/diva/adm/IDN_adm.zip)
 - Ekstrak data dan pindahkan semua data ke folder <GEOSERVER_DATA_DIR>/data/
 
  
